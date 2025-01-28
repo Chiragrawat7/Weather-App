@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Wheather App</h1>
+        <div class="tab-container">
+            <p class="tab" data-userWheather>Your Wheather</p>
+            <p class="tab" data-searchWheather>Search Wheather</p>
+        </div>
+        <div class="Wheather-Container">
+            <!-- Grant Location container  -->
+            <div class="sub-container grant-location-container">
+                <img src="./images/location.png" alt="" width="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow location to get Wheather Information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>
+
+            <!-- search location container  -->
+
+            <form class="form-comntainer" data-searchForm>
+                <input placeholder="Search for city" data-searchInput>
+                <button class="btn" type="submit"><img src="./images/search.png" alt="" width="20"
+                        loading="lazy"></button>
+            </form>
+
+            <!-- loading screen container -->
+            <div class="sub-container loading-container">
+                <img src="./images/loading.gif" width="150" alt="">
+                <p>loading</p>
+            </div>
+
+            <!-- show Wheather Information -->
+
+            <div class="sub-container user-info-container">
+                <!-- city name flag  -->
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+                <!--wheather description -->
+                <p data-WheatherDiscription></p>
+                <img data-WheatherIcon>
+                <p data-temp></p>
+
+                <div class="parameter-container">
+                    <!-- card-1  -->
+                    <div class="parameter">
+                        <img src="./images/wind.png">
+                        <p>wind speed</p>
+                        <p data-windspeed></p>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="parameter">
+                        <img src="./images/humidity.png" alt="">
+                        <p>humidity</p>
+                        <p data-humidity></p>
+                    </div>
+
+                    <!-- card-3  -->
+                    <div class="parameter">
+                        <img src="./images/cloud.png" alt="">
+                        <p>clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="index.js"></script> -->
+</body>
+
+</html>
